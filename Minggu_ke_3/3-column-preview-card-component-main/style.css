@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap");
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 55%;
+  margin: 100px auto 50px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.content {
+  margin: 30px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  border-style: none;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    width: 40%;
+    margin: 50px auto 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    width: 50%;
+    margin: 50px auto 50px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    width: 49%;
+    margin: 50px auto 50px;
+  }
+}
